@@ -27,6 +27,7 @@ function CategoriesScreen ({navigation}){
             <View>
                 <CategoryItems />
             </View>
+            
 
         </SafeAreaView>
     );
