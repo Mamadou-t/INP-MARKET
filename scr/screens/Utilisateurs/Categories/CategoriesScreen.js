@@ -2,10 +2,10 @@
 import React from 'react';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import { View, Text, SafeAreaView, TouchableOpacity } from'react-native';
-import COLORS from '../../constantes/colors';
-import Header from '../../composants/header';
+import COLORS from '../../../constantes/colors';
+import Header from '../../../composants/header';
 import { AntDesign } from '@expo/vector-icons';
-import CategoryItems from '../../composants/categoriesItems';
+import CategoryItems from '../../../composants/categoriesItems';
 
 
 function CategoriesScreen ({navigation}){

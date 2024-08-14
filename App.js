@@ -11,9 +11,9 @@ import LandingScreen from './scr/composants/LandingScreen';
 import HomeScreen from './scr/screens/Utilisateurs/HomeScreen';
 import ConnexionScreen from './scr/composants/Connexions/ConnexionScreen';
 import InscriptionScreen from './scr/composants/Connexions/InscriptionScreen';
-import CategoriesScreen from './scr/screens/Utilisateurs/CategoriesScreen';
+import CategoriesScreen from './scr/screens/Utilisateurs/Categories/CategoriesScreen';
 import BoutiquesScreen from './scr/screens/Utilisateurs/Boutiques/BoutiquesScreen';
-import MonCompteScreen from './scr/screens/Utilisateurs/MonCompteScreen';
+import MonCompteScreen from './scr/screens/Utilisateurs/Compte/MonCompteScreen';
 import ToutsProduits from './scr/screens/Utilisateurs/ToutsProduits';
 import ServicesScreen from './scr/screens/Utilisateurs/Services/ServicesScreen';
 import DetailsProduitsScreen from './scr/screens/Utilisateurs/DetailsProduitsScreen';
@@ -21,6 +21,11 @@ import PanierScrenn from './scr/screens/Utilisateurs/PanierScrenn';
 import RechercherProduit from './scr/composants/SearchScreen';
 import ToutsProduitsCategorie from './scr/screens/Utilisateurs/ToutsProduitsCategorie';
 import DetailsBoutique from './scr/screens/Utilisateurs/Boutiques/DetailsBoutique';
+import MesCommandesScreen from './scr/screens/Utilisateurs/Compte/Commandes';
+import MesServicesScreen from './scr/screens/Utilisateurs/Compte/Services';
+import MonProfileScreen from './scr/screens/Utilisateurs/Compte/Profile';
+import MesBoutiquesScreen from './scr/screens/Utilisateurs/Compte/Boutiques';
+import MesVendeursScreen from './scr/screens/Utilisateurs/Compte/Vendeurs';
 
 
 
@@ -123,6 +128,11 @@ const App = () => {
         <Stack.Screen name="Rechercher_Produits" component={RechercherProduit} />
         <Stack.Screen name="Touts_produits_categorie" component={ToutsProduitsCategorie} />
         <Stack.Screen name="Details_Boutique" component={DetailsBoutique} />
+        <Stack.Screen name="Mes_Commandes" component={MesCommandesScreen} />
+        <Stack.Screen name="Mes_Services" component={MesServicesScreen} />
+        <Stack.Screen name="Mes_Vendeurs" component={MesVendeursScreen} />
+        <Stack.Screen name="Mon_Profile" component={MonProfileScreen} />
+        <Stack.Screen name="Mes_Boutiques" component={MesBoutiquesScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

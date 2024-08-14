@@ -1,4 +1,4 @@
-import {React, useState} from 'react';
+import {React, useState,useEffect} from 'react';
 import {  View, Text, SafeAreaView,StyleSheet, TextInput, TouchableOpacity, FlatList, Dimensions, Image, ScrollView, StatusBar } from 'react-native';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import {CategoryData} from '../constantes/categories';
@@ -6,8 +6,12 @@ import COLORS from '../constantes/colors';
 import Animated, { FadeInUp } from 'react-native-reanimated';
 
 
-
 function Categories ({activeCategory,setActiveCategory}){
+
+  
+
+
+
     return(
 
         <Animated.View entering={FadeInUp.duration(500)}>

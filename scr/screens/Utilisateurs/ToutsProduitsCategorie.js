@@ -17,9 +17,9 @@ import { CategoryData } from '../../constantes/categories';
 
 
 
-function ToutsProduitsCategorie({navigation,route}){
+function ToutsProduitsCategorie({route}){
 
-    const categorie= route.params;
+    const { categorie } = route.params;
 
     return(
         <SafeAreaView style={{flex:1,backgroundColor:COLORS.white}}>
@@ -28,7 +28,7 @@ function ToutsProduitsCategorie({navigation,route}){
                 <View style={{justifyContent:'space-between',flexDirection:'row',marginRight:hp(2)}} >
                   <View style={{flexDirection:'row'}}>
                           <Retour />
-                          <Text style={{fontSize:hp(3),fontWeight:'bold',marginTop:hp(2)}}>{categorie.name} </Text>
+                          <Text style={{fontSize:hp(3),fontWeight:'bold',marginTop:hp(2)}}>{categorie.label} </Text>
                   </View>
 
                   <View style={{flexDirection:'row',marginHorizontal:hp(2),marginTop:hp(2)}}>
