@@ -23,7 +23,7 @@ function MonCompteScreen() {
             </View>
 
             <View style={{ marginTop: hp(5), flexDirection: 'column' }}>
-                <TouchableOpacity activeOpacity={0.5} onPress={()=>navigation.navigate('Mon_Profile')} >
+                <TouchableOpacity activeOpacity={0.5} onPress={()=>navigation.navigate('Mon_Profile',)} >
                     <ProfileOptions texte={"Profile"} IconName={'account-circle'} />
                 </TouchableOpacity>
 
